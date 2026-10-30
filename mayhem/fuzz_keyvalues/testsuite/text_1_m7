@@ -1,0 +1,2 @@
+"GameInfo" { "game" "Half-Life 2" // comment
+ "FileSystem" { "SteamAppId" "220" "SearchPaths" { "game" "|gameinfo_path|." } } }

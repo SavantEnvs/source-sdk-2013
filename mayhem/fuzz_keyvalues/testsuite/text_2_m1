@@ -1,0 +1,6 @@
+"Conditional"
+{
+	"key" "a" [$WIN32]
+	"key" "b" [!$WIN32]
+	"#base" "x.txt"
+}

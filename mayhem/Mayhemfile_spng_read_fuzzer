@@ -1,0 +1,10 @@
+project: savantenvs/source-sdk-2013
+target: spng_read_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/spng_read_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/spng_read_fuzzer
+    libfuzzer: true
+    timeout: 30
+    dictionary: /mayhem/src/thirdparty/libspng/tests/spng.dict

@@ -1,0 +1,9 @@
+"Weapon"
+{
+	"damage" "42"
+	"speed" "1.5"
+	"Sounds"
+	{
+		"single" "Weapon.Hit"
+	}
+}

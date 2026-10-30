@@ -1,0 +1,9 @@
+project: savantenvs/source-sdk-2013
+target: fuzz_snappy
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_snappy/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_snappy
+    libfuzzer: true
+    timeout: 30

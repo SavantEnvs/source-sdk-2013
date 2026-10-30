@@ -1,0 +1,1 @@
+# libspng includes "../zlib/zlib.h"; build.sh adds this directory with -I so the lookup resolves to ../zlib/zlib.h here.

@@ -1,0 +1,10 @@
+project: savantenvs/source-sdk-2013
+target: fuzz_keyvalues
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_keyvalues/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_keyvalues
+    libfuzzer: true
+    timeout: 30
+    dictionary: /mayhem/mayhem/fuzz_keyvalues/fuzz_keyvalues.dict
